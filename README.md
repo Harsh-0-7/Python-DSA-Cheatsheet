@@ -3,8 +3,7 @@
 ## Arrays/Lists:
 
 **Prepending an item to a list**: ```python
-output.insert(0, item)
-``` 
+output.insert(0, item)``` 
 
 **Iterating over 2 or more lists in parallel**: ```for item1, item2 in zip(list1, list2):```
 
