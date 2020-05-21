@@ -20,8 +20,8 @@ output[::-1]
 **Slicing from index to index**: 
 ```python
 output[2:5] # Will only include index 2, 3, 4 (NOT 5)
-output[2:] # Will include index values from 2 until the end
-output[:4] # Will include index values from 0 until 3
+output[2:]  # Will include index values from 2 until the end
+output[:4]  # Will include index values from 0 until 3
 ```
 
 ## Sorting:
