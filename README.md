@@ -2,8 +2,7 @@
 
 ## Arrays/Lists:
 
-**Prepending an item to a list**: 
-```python
+**Prepending an item to a list**: ```python
 output.insert(0, item)
 ``` 
 
