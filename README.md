@@ -7,11 +7,20 @@
 output.insert(0, item)
 ``` 
 
-**Iterating over 2 or more lists in parallel**: ```for item1, item2 in zip(list1, list2):```
+**Iterating over 2 or more lists in parallel**: 
+```python
+for item1, item2 in zip(list1, list2):
+```
 
-**Slicing list in reverse**: ```output[::-1]```
+**Slicing list in reverse**: 
+```python
+output[::-1]
+```
 
-**Slicing from index to index**: ```output[2:5] # Will only include index 2, 3, 4 (NOT 5)```
+**Slicing from index to index**: 
+```python
+output[2:5] # Will only include index 2, 3, 4 (NOT 5)
+```
 
 ## Sorting:
 
