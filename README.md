@@ -2,7 +2,7 @@
 
 ## Arrays/Lists:
 
-**Prepending an item to a list**: ```list.insert(item, 0)``` 
+**Prepending an item to a list**: ```list.insert(0, item)``` 
 
 ## Sorting:
 
