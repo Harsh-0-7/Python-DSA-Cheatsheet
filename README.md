@@ -34,6 +34,12 @@ word.startswith('a')
 word.endswith('bcd')
 ```
 
+**Letter positioning**:
+```python
+ord('a') # Will return 97
+chr(97)  # Will return 'a'
+```
+
 ## Sorting:
 
 ## Search:
