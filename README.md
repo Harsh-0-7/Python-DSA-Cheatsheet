@@ -12,16 +12,13 @@ output.insert(0, item)
 for item1, item2 in zip(list1, list2):
 ```
 
-**Reverse a list**: 
-```python
-output[::-1]
-```
-
 **Slicing from index to index**: 
 ```python
-output[2:5] # Will only include index 2, 3, 4 (NOT 5)
-output[2:]  # Will include index values from 2 until the end
-output[:4]  # Will include index values from 0 until 3
+output[::-1] # Will reverse the list
+output[2:5]  # Will only include index 2, 3, 4 (NOT 5)
+output[2:]   # Will include index values from 2 until the end
+output[:4]   # Will include first 4 elements
+output[-3:]  # Will include last 3 elements
 ```
 
 ## Strings:
@@ -29,6 +26,12 @@ output[:4]  # Will include index values from 0 until 3
 **Count the occurances of a letter**:
 ```python
 word.count('a') # Number of times a is in the string
+```
+
+**If Strings starts or ends with a substring**:
+```python
+word.startswith('a')
+word.endswith('bcd')
 ```
 
 ## Sorting:
