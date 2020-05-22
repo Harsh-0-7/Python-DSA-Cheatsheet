@@ -40,6 +40,24 @@ ord('a') # Will return 97
 chr(97)  # Will return 'a'
 ```
 
+**Case Conversion**:
+```python
+word.lower() # To lowercase
+word.upper() # To uppercase
+```
+
+**Find index of substring**:
+```python
+word.find('abc') # Returns the starting index of substring, otherwise -1 if not found
+```
+
+**Strip spaces**:
+```python
+word.strip()  # Remove whitespace from both ends
+word.rstrip() # Remove whitespace from right end
+word.lstrip() # Remove whitespace from left end
+```
+
 ## Sorting:
 
 ## Search:
