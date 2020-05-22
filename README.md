@@ -73,6 +73,14 @@ word.lstrip() # Remove whitespace from left end
 
 * Counter
 * Default Dict
+* Dict keys
+* Dict values
+* Sort by keys
+* Sort by values
+
+## Classes:
+
+* __repr__
 
 ## Sorting:
 
