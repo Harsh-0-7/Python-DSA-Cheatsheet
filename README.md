@@ -69,6 +69,11 @@ word.lstrip() # Remove whitespace from left end
 '-'.join(list1) # Will concat each value with '-' in between each value
 ```
 
+## Hashmaps/Dictionaries:
+
+* Counter
+* Default Dict
+
 ## Sorting:
 
 ## Search:
@@ -84,8 +89,6 @@ word.lstrip() # Remove whitespace from left end
 ## Linked Lists:
 
 ## String Manipulation:
-
-## Hashmaps/Dictionaries:
 
 ## Dynamic Programming:
 
