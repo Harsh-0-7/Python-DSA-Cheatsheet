@@ -23,6 +23,11 @@ output[-3:]  # Will include last 3 elements
 
 ## Strings:
 
+**Replace a substring**:
+```python
+word.replace('abc', 'def')
+```
+
 **Count the occurances of a letter**:
 ```python
 word.count('a') # Number of times a is in the string
@@ -56,6 +61,12 @@ word.find('abc') # Returns the starting index of substring, otherwise -1 if not 
 word.strip()  # Remove whitespace from both ends
 word.rstrip() # Remove whitespace from right end
 word.lstrip() # Remove whitespace from left end
+```
+
+**Convert list into string**:
+```python
+''.join(list1)  # Will concat each value together
+'-'.join(list1) # Will concat each value with '-' in between each value
 ```
 
 ## Sorting:
