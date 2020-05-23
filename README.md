@@ -2,7 +2,13 @@
 
 ## Arrays/Lists:
 
-clear
+**Deleting from a list**:
+```python
+arr.clear()
+arr.pop(0)
+arr.pop(len(arr) - 1)
+del arr[0]
+```
 
 **Prepending an item to a list**: 
 ```python
@@ -13,7 +19,7 @@ output.insert(0, item)
 
 **Iterating over multiple lists in parallel**: 
 ```python
-for item1, item2 in zip(list1, list2):
+for item1, item2 in zip(list1, list2): # Lists must be the same length
 ```
 
 **Slicing from index to index**: 
