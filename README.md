@@ -87,6 +87,20 @@ word.lstrip() # Remove whitespace from left end
 ## Search:
 
 **Iterative Binary Search**:
+```python
+def binarySearch(list1, value):
+    low, high = 0, len(list1) - 1
+    while low < high:
+        # mid = low + (high - low) // 2
+        mid = (low + high) // 2
+        if value == list1[mid]:
+            return mid
+        elif value > list1[mid]:
+            low = mid + 1
+        else:
+            high = mid - 1
+    return low
+```
 
 **Recursive Binary Search**:
 
