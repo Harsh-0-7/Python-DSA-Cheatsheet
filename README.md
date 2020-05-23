@@ -2,6 +2,8 @@
 
 ## Arrays/Lists:
 
+clear
+
 **Prepending an item to a list**: 
 ```python
 output.insert(0, item)
@@ -118,8 +120,31 @@ def bubbleSort(arr):
         if swapped == False:
             break
 ```
-* Merge Sort
-* Bubble Sort
+**Merge Sort**:
+```python
+def mergeSort(arr): 
+    if len(arr) <= 1: 
+        return
+
+    mid = (0 + len(arr)) // 2
+    left = arr[:mid] 
+    right = arr[mid:] 
+
+    mergeSort(left) 
+    mergeSort(right) 
+
+    arr.clear()
+    i, j = 0, 0
+    while i < len(left) and j < len(right):
+        if left[i] <= right[j]:
+            arr.append(left[i])
+            i += 1
+        else:
+            arr.append(right[j])
+            j += 1            
+
+    arr += left[i:] + right[j:]
+```
 
 ## Trees:
 
