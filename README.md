@@ -106,6 +106,19 @@ def binarySearch(list1, value):
 
 ## Sorting:
 
+**Bubble Sort**:
+```python
+def bubbleSort(arr):
+    for i in range(0, len(arr) - 1):
+        swapped = False
+        for j in range(0, len(arr) - 1 - i):
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+        if swapped == False:
+            break
+    return swaps
+```
 * Merge Sort
 * Bubble Sort
 
