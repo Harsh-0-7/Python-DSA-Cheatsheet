@@ -117,7 +117,6 @@ def bubbleSort(arr):
                 swapped = True
         if swapped == False:
             break
-    return swaps
 ```
 * Merge Sort
 * Bubble Sort
