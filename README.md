@@ -7,6 +7,8 @@
 output.insert(0, item)
 ``` 
 
+**Removing from a list:**
+
 **Iterating over multiple lists in parallel**: 
 ```python
 for item1, item2 in zip(list1, list2):
@@ -82,9 +84,16 @@ word.lstrip() # Remove whitespace from left end
 
 * __repr__
 
+## Search:
+
+**Iterative Binary Search**:
+
+**Recursive Binary Search**:
+
 ## Sorting:
 
-## Search:
+* Merge Sort
+* Bubble Sort
 
 ## Trees:
 
