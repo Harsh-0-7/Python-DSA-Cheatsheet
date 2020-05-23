@@ -7,7 +7,6 @@
 arr.clear()
 arr.pop(0)
 arr.pop(len(arr) - 1)
-del arr[0]
 ```
 
 **Prepending an item to a list**: 
@@ -80,6 +79,9 @@ word.lstrip() # Remove whitespace from left end
 ```
 
 ## Hashmaps/Dictionaries:
+
+**Convert list into string**:
+
 
 * Counter
 * Default Dict
