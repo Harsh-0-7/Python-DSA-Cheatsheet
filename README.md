@@ -168,5 +168,7 @@ def mergeSort(arr):
 
 ## Dynamic Programming:
 
+* Longest Common Subsequence
+
 ## Recursion:
 
