@@ -2,14 +2,15 @@
 
 ## Arrays/Lists:
 
-intiialise 2d array
-    memo = [[None for i in range(len(newS1))] for j in range(len(newS2))]
-
+**Initialise 2d array**:
+```python
+arr = [[0 for i in range(m)] for j in range(n)]
+```
 
 **Deleting from a list**:
 ```python
 arr.clear()
-arr.pop(0)
+arr.pop(0) 
 arr.pop(len(arr) - 1)
 ```
 
