@@ -189,6 +189,16 @@ def mergeSort(arr):
 
 ## Trees:
 
+**Height of BST**:
+```python
+def height(root):
+    if root == None:
+        return 0
+    elif root.left == root.right == None:
+        return 0
+    return 1 + max(height(root.left), height(root.right))
+```
+
 ## Graphs:
 
 ## Linked Lists:
