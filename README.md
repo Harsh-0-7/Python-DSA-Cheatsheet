@@ -212,6 +212,25 @@ def checkBST(root):
     return helper(root, float("-inf"), float("inf"))
 ```
 
+**Huffman Decoding**:
+```python
+def helper(root, curr, string, i):
+    # Base Case at node with no children
+    if curr.left == None and curr.right == None:
+        return curr.data + helper(root, root, string, i)
+    # If i index is exceeded
+    if i >= len(string):
+        return ""
+    # Determine branch path
+    if string[i] == str(0):
+        return helper(root, curr.left, string, i + 1)
+    elif string[i] == str(1):
+        return helper(root, curr.right, string, i + 1)
+
+def decodeHuff(root, string):
+    return helper(root, root, string, 0)
+``
+
 ## Graphs:
 
 ## Linked Lists:
