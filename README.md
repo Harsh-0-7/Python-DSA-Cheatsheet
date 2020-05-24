@@ -4,19 +4,19 @@
 
 **Initialise 2d array**:
 ```python
-arr = [[0 for i in range(m)] for j in range(n)]
+arr = [[0 for i in range(m)] for j in range(n)] # arr[m][n] o(nm)
 ```
 
 **Deleting from a list**:
 ```python
 arr.clear()
-arr.pop(0) 
-arr.pop(len(arr) - 1)
+arr.pop(0)  # O(n) When deleting first element
+arr.pop(-1) # O(1) When deleting last element
 ```
 
 **Prepending an item to a list**: 
 ```python
-output.insert(0, item)
+output.insert(0, item) # O(n)
 ``` 
 
 **Removing from a list:**
@@ -33,6 +33,20 @@ output[2:5]  # Will only include index 2, 3, 4 (NOT 5)
 output[2:]   # Will include index values from 2 until the end
 output[:4]   # Will include first 4 elements
 output[-3:]  # Will include last 3 elements
+```
+
+## Stacks & Queues:
+
+**Use Deque (Doubly linked list queue)**:
+```python
+from collections import deque
+queue = deque()
+```
+
+**Operations**:
+```python
+queue.appendleft # O(1)
+queue.popleft # O(1)
 ```
 
 ## Strings:
@@ -162,15 +176,6 @@ def mergeSort(arr):
 ## Trees:
 
 ## Graphs:
-
-## Stacks & Queues:
-
-from collections import deque
-Deques have O(1) speed for appendleft() and popleft() while lists have O(n) performance for insert(0, value) and pop(0).
-
-[]
-stack.pop() # will pop last element
-
 
 ## Linked Lists:
 
