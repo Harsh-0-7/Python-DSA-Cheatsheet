@@ -30,7 +30,7 @@ output[:4]   # Will include first 4 elements
 output[-3:]  # Will include last 3 elements
 ```
 
-## Stacks & Queues:
+## Queues:
 
 **Use Deque (Doubly linked list)**:
 ```python
