@@ -4,7 +4,7 @@
 
 **Initialise 2d array**:
 ```python
-arr = [[0 for i in range(m)] for j in range(n)] # arr[m][n] o(nm)
+arr = [[0 for i in range(m)] for j in range(n)] # Access arr[m][n]
 ```
 
 **Deleting from a list**:
@@ -17,7 +17,7 @@ stack.append(item) # O(1)
 
 **Prepending an item to a list**: 
 ```python
-output.insert(0, item) # O(n)
+output.insert(0, item) # O(n) Insert item at index 0
 ``` 
 
 **Iterating over multiple lists in parallel**: 
@@ -98,8 +98,10 @@ word.lstrip() # Remove whitespace from left end
 
 ## Hashmaps/Dictionaries:
 
-**Convert list into string**:
-
+**Delete key from Dictionary**:
+```python
+del my_dict['key']
+```
 
 * Counter
 * Default Dict
