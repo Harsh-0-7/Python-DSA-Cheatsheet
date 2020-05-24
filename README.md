@@ -7,16 +7,12 @@
 arr = [[0 for i in range(m)] for j in range(n)] # Access arr[m][n]
 ```
 
-**Deleting from a list**:
+**Adding & Deleting from a list**:
 ```python
 arr.clear()
 arr.pop(0)  # O(n) When deleting first element
 stack.pop() # O(1) When deleting last element
 stack.append(item) # O(1)
-```
-
-**Prepending an item to a list**: 
-```python
 output.insert(0, item) # O(n) Insert item at index 0
 ``` 
 
@@ -40,10 +36,6 @@ output[-3:]  # Will include last 3 elements
 ```python
 from collections import deque
 queue = deque()
-```
-
-**Operations**:
-```python
 queue.appendleft # O(1) Add to queue
 queue.popleft # O(1) Remove first element from queue
 ```
@@ -110,6 +102,7 @@ sorted(my_dict.items()) # Will sort based on key
 sorted(my_dict.items(), key=lambda x:x[1]) # Will sort based on value
 sorted(my_dict.items(), key=lambda x : (x[1], x[0])) # Will sort based on value, then sort keys alphabetically
 ```
+
 **Values**:
 ```python
 my_dict.items() # Returns a list of tuples of (key, value) pairs
@@ -124,7 +117,6 @@ from collections import Counter
 count = Counter()
 ...
 count.most_common(1)[0] # Will return (key, value) with the highest value
-
 ```
 
 
