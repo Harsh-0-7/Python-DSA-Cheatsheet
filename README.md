@@ -200,7 +200,7 @@ def height(root):
 ```
 
 **Validate BST**:
-``python
+```python
 def helper(root, low, high):
     if root == None:
         return True
@@ -211,6 +211,7 @@ def helper(root, low, high):
 def checkBST(root):
     return helper(root, float("-inf"), float("inf"))
 ```
+
 ## Graphs:
 
 ## Linked Lists:
