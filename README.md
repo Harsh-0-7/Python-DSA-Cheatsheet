@@ -1,4 +1,4 @@
-# Python Data Structures
+# Python Data Structures & Algorithms
 
 ## Arrays/Lists:
 
@@ -98,17 +98,35 @@ word.lstrip() # Remove whitespace from left end
 
 ## Hashmaps/Dictionaries:
 
-**Delete key from Dictionary**:
+**Delete from Dictionary**:
 ```python
-del my_dict['key']
+del my_dict['key'] # O(1) Deletes key and it's values
+del my_dict['key'][0] # Deletes value
 ```
 
-* Counter
-* Default Dict
-* Dict keys
-* Dict values
-* Sort by keys
-* Sort by values
+**Sorting Dictionary**:
+```python
+sorted(my_dict.items()) # Will sort based on key
+sorted(my_dict.items(), key=lambda x:x[1]) # Will sort based on value
+sorted(my_dict.items(), key=lambda x : (x[1], x[0])) # Will sort based on value, then sort keys alphabetically
+```
+**Values**:
+```python
+my_dict.items() # Returns a list of tuples of (key, value) pairs
+my_dict.keys() # Returns a list of keys
+my_dict.values() # Returns a list of values
+```
+
+**Collections**:
+```python
+from collections import defaultdict # A dictionary that will not throw an error at missing key lookups
+from collections import Counter
+count = Counter()
+...
+count.most_common(1)[0] # Will return (key, value) with the highest value
+
+```
+
 
 ## Sets:
 
