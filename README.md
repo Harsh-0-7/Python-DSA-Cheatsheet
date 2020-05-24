@@ -229,7 +229,7 @@ def helper(root, curr, string, i):
 
 def decodeHuff(root, string):
     return helper(root, root, string, 0)
-``
+```
 
 ## Graphs:
 
