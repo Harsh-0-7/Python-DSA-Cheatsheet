@@ -2,6 +2,10 @@
 
 ## Arrays/Lists:
 
+intiialise 2d array
+    memo = [[None for i in range(len(newS1))] for j in range(len(newS2))]
+
+
 **Deleting from a list**:
 ```python
 arr.clear()
@@ -158,9 +162,14 @@ def mergeSort(arr):
 
 ## Graphs:
 
-## Stacks:
+## Stacks & Queues:
 
-## Queues:
+from collections import deque
+Deques have O(1) speed for appendleft() and popleft() while lists have O(n) performance for insert(0, value) and pop(0).
+
+[]
+stack.pop() # will pop last element
+
 
 ## Linked Lists:
 
