@@ -11,15 +11,14 @@ arr = [[0 for i in range(m)] for j in range(n)] # arr[m][n] o(nm)
 ```python
 arr.clear()
 arr.pop(0)  # O(n) When deleting first element
-arr.pop(-1) # O(1) When deleting last element
+stack.pop() # O(1) When deleting last element
+stack.append(item) # O(1)
 ```
 
 **Prepending an item to a list**: 
 ```python
 output.insert(0, item) # O(n)
 ``` 
-
-**Removing from a list:**
 
 **Iterating over multiple lists in parallel**: 
 ```python
@@ -37,7 +36,7 @@ output[-3:]  # Will include last 3 elements
 
 ## Stacks & Queues:
 
-**Use Deque (Doubly linked list queue)**:
+**Use Deque (Doubly linked list)**:
 ```python
 from collections import deque
 queue = deque()
@@ -45,8 +44,8 @@ queue = deque()
 
 **Operations**:
 ```python
-queue.appendleft # O(1)
-queue.popleft # O(1)
+queue.appendleft # O(1) Add to queue
+queue.popleft # O(1) Remove first element from queue
 ```
 
 ## Strings:
@@ -108,6 +107,9 @@ word.lstrip() # Remove whitespace from left end
 * Dict values
 * Sort by keys
 * Sort by values
+
+## Sets:
+
 
 ## Classes:
 
