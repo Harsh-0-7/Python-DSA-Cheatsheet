@@ -199,6 +199,18 @@ def height(root):
     return 1 + max(height(root.left), height(root.right))
 ```
 
+**Validate BST**:
+``python
+def helper(root, low, high):
+    if root == None:
+        return True
+    elif root.data <= low or root.data >= high:
+        return False
+    return helper(root.left, low, root.data) and helper(root.right, root.data, high)
+
+def checkBST(root):
+    return helper(root, float("-inf"), float("inf"))
+```
 ## Graphs:
 
 ## Linked Lists:
