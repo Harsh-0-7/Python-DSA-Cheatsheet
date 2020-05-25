@@ -260,12 +260,8 @@ def maxSubsetSum(arr):
 
 ## Truth Values:
 ```python
-True and True   # True
 True and False  # False
-False and False # False
-True or True    # True
 True or False   # True
-False or False  # False
 ```
 
 ## Python Specific:
