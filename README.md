@@ -241,6 +241,21 @@ def decodeHuff(root, string):
 
 * Longest Common Subsequence
 
+**Max Non Adjacent Sum**:
+```python
+def maxSubsetSum(arr):
+    exclude = 0
+    include = 0
+    for i in arr:
+        if exclude > include:
+            temp = exclude
+        else:
+            temp = include
+        include = exclude + i
+        exclude = temp
+    return max(include, exclude)
+ ```
+
 ## Recursion:
 
 ## Python Specific:
