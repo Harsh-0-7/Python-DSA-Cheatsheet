@@ -259,7 +259,7 @@ def maxSubsetSum(arr):
 ## Recursion:
 
 ## Truth Values:
-```
+```python
 True and True   # True
 True and False  # False
 False and False # False
