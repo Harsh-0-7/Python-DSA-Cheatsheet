@@ -243,3 +243,8 @@ def decodeHuff(root, string):
 
 ## Recursion:
 
+## Python Specific:
+
+* Generators
+* Iterators
+* Decorators
