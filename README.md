@@ -269,3 +269,7 @@ True or False   # True
 * Generators
 * Iterators
 * Decorators
+* garbage collection 
+* deep copy/shallow copy, 
+* inheritance/abstractions/encapsulation
+
