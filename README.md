@@ -273,3 +273,14 @@ True or False   # True
 * deep copy/shallow copy, 
 * inheritance/abstractions/encapsulation
 
+**Copying**:
+```python
+a = [1, 2, 3]
+b = a.copy() # Creates a shallow copy
+c = [[1,2,3],[4,5,6],[7,8,9]]
+d = c.copy()
+d[0][0] = 'a' # Will alter d AND c since it is a list of references
+from copy import deepcopy
+e = deepcopy(d) # Use deepcopy instead
+```
+
