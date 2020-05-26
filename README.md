@@ -284,3 +284,7 @@ from copy import deepcopy
 e = deepcopy(d) # Use deepcopy instead
 ```
 
+**Python**
+* Is dynamically typed not statically typed (e.g. int i = 0)
+* Concurrency problems
+* yield (pauses function, keeps state, saves memory) ~ return 
