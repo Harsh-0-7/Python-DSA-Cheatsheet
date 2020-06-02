@@ -1,4 +1,4 @@
-# Python Data Structures & Algorithms
+# Python Data Structures & Algorithms Cheatsheet
 
 ## Arrays/Lists:
 
