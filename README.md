@@ -1,5 +1,7 @@
 # Python Data Structures & Algorithms Cheatsheet
 
+To Add: Set manipulation, fstring decimal points
+
 ## Arrays/Lists:
 
 **Initialise 2d array**:
