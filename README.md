@@ -272,22 +272,88 @@ for key, value in comp1531_f11a_class.items():
 
 ### Dictionary Comprehension
 ```python
-# TODO
+# Creating a new dictionary by modifying an existing dictionary
+squares = {num: num**2 for num in range(1, 6)}
+print(squares)
+# Output: {1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+
+# Conditional comprehension
+even_squares = {num: num**2 for num in range(1, 11) if num % 2 == 0}
+print(even_squares)
+# Output: {2: 4, 4: 16, 6: 36, 8: 64, 10: 100}
 ```
 
 ### Dictionary Functions
 ```python
-# clear()
-# copy()
-# fromkeys()
-# get()
-# items()
-# keys()
-# pop()
-# popitem()
-# setdefault()
-# update()
-# values()
+# clear() - Removes all items from the dictionary
+sample_dict = {"a": 1, "b": 2}
+sample_dict.clear()
+print(sample_dict)
+# Output: {}
+
+# copy() - Returns a shallow copy of the dictionary
+sample_dict = {"a": 1, "b": 2}
+copy_dict = sample_dict.copy()
+print(copy_dict)
+# Output: {"a": 1, "b": 2}
+
+# fromkeys() - Creates a new dictionary with keys from a given sequence and values set to a specified value
+keys = ["a", "b", "c"]
+default_value = 0
+new_dict = dict.fromkeys(keys, default_value)
+print(new_dict)
+# Output: {"a": 0, "b": 0, "c": 0}
+
+# get() - Returns the value for a key if the key is in the dictionary, else returns a default value
+sample_dict = {"a": 1, "b": 2}
+print(sample_dict.get("a"))
+# Output: 1
+print(sample_dict.get("c", "Not Found"))
+# Output: Not Found
+
+# items() - Returns a view object of the dictionary's key-value pairs
+sample_dict = {"a": 1, "b": 2}
+print(sample_dict.items())
+# Output: dict_items([('a', 1), ('b', 2)])
+
+# keys() - Returns a view object of the dictionary's keys
+sample_dict = {"a": 1, "b": 2}
+print(sample_dict.keys())
+# Output: dict_keys(['a', 'b'])
+
+# pop() - Removes the specified key and returns the corresponding value
+sample_dict = {"a": 1, "b": 2}
+print(sample_dict.pop("a"))
+# Output: 1
+print(sample_dict)
+# Output: {'b': 2}
+
+# popitem() - Removes and returns the last key-value pair from the dictionary
+sample_dict = {"a": 1, "b": 2}
+print(sample_dict.popitem())
+# Output: ('b', 2)
+print(sample_dict)
+# Output: {'a': 1}
+
+# setdefault() - Returns the value of a key if it is in the dictionary. If not, inserts the key with a specified value.
+sample_dict = {"a": 1, "b": 2}
+print(sample_dict.setdefault("a", 100))
+# Output: 1
+print(sample_dict.setdefault("c", 100))
+# Output: 100
+print(sample_dict)
+# Output: {'a': 1, 'b': 2, 'c': 100}
+
+# update() - Updates the dictionary with elements from another dictionary or from an iterable of key-value pairs
+sample_dict = {"a": 1, "b": 2}
+sample_dict.update({"b": 3, "c": 4})
+print(sample_dict)
+# Output: {'a': 1, 'b': 3, 'c': 4}
+
+# values() - Returns a view object of the dictionary's values
+sample_dict = {"a": 1, "b": 2}
+print(sample_dict.values())
+# Output: dict_values([1, 2])
 ```
 
 ## Other Data Structures
